@@ -1,0 +1,1340 @@
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Авторизация</title>
+		<!-- <meta name="viewport" content="width=device-width"> -->
+		<meta name='viewport' content='width=device-width'/>
+		<meta content='true' name='HandheldFriendly'/>
+		<meta content='width' name='MobileOptimized'/>
+		<meta content='yes' name='apple-mobile-web-app-capable'/>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="высшее образование, спо, впо, дистанционное образование, наука, конференции" />
+<meta name="description" content="Официальный сайт Пятигорского государственного университета" />
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'TVwM3R':'d41d8cd98f00','LkGdQn':'43b59b4b1b90','XEVOpk':'a3f0166278db','y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','Zg1Ab0':'d41d8cd98f00','MoecjV':'d41d8cd98f00','0weid0':'4c801c10cfc8','g8taYv':'da7482750915','vhh5NV':'d41d8cd98f00','SyEEG1':'d41d8cd98f00','pVYwEG':'d41d8cd98f00','uMP05O':'d41d8cd98f00','hG8wzQ':'d41d8cd98f00'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);</script>
+
+
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16582238832320" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165822386124774" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/css/main/system.auth/flat/style.min.css?16007833295404" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/bitrix/socserv.auth.form/flatedu/style.min.css?15699589992462" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/ajax/ajax.min.css?1600783322420" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/bitrix/breadcrumb/breadcrumb_mto/style.css?1619594572207" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/components/bitrix/system.pagenavigation/templates/modern/style.min.css?1600783327659" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/.default/components/bitrix/news.list/main_anons_today_alert/style.css?15862559571194" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/gos_bitrix/styles.css?165780197022" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/gos_bitrix/template_styles.css?16578019701537" type="text/css"  data-template-style="true"  rel="stylesheet" />
+		
+		<link href="/bitrix/templates/gos_bitrix/normalize.css?13923733562208" rel="stylesheet" />
+		<link href="/bitrix/templates/gos_bitrix/mobile.css?15874632835461" rel="stylesheet" />
+		
+		<link href="/bitrix/templates/gos_bitrix/style.css?158514150352228" rel="stylesheet" />
+		<script type="text/javascript" src="/bitrix/js/jquery/1.9.1-jquery.min.js"></script>
+
+
+	
+		<!--
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+		
+		<script>window.jQuery || document.write('<script src="/bitrix/templates/gos_bitrix/js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+		<!-- script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script -->
+
+
+
+
+		<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1658223861216421"></script>
+
+<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'Y','pull_config_timestamp':'1651645702','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'PGU','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/polyfill/customevent/main.polyfill.customevent.min.js?1600783322556"></script>
+<script type="text/javascript" src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165409084860992"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?160078332310430"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_fx.min.js?16007833229768"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?165409081811264"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.min.js?165164563576433"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/model.min.js?165164563514190"></script>
+<script type="text/javascript" src="/bitrix/js/pull/client/pull.client.min.js?165822388144545"></script>
+<script type="text/javascript" src="/bitrix/js/main/ajax.js?160078332635509"></script>
+<script type="text/javascript" src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165822386164063"></script>
+
+<style>
+	.list-group {
+		margin-bottom: 20px;
+		padding-left: 0;
+		width: 307px;
+		margin-right:15px;
+	}
+	.list-group-item {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		display: block;
+		margin-bottom: -1px;
+		padding: 10px 15px;
+		position: relative;
+		text-decoration:none;
+	}
+	.list-group-item:first-child {
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+	.list-group-item:last-child {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		margin-bottom: 0;
+	}
+	a.list-group-item {
+		color: #555;
+	}
+	a.list-group-item .list-group-item-heading {
+		color: #333;
+	}
+	a.list-group-item:focus, a.list-group-item:hover {
+		background-color: #f5f5f5;
+		color: #555;
+		text-decoration: none;
+	}
+	.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+		background-color: #eee;
+		color: #777;
+		cursor: not-allowed;
+	}
+	.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
+		color: inherit;
+	}
+	.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
+		color: #777;
+	}
+	.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+		background-color: #337ab7;
+		border-color: #337ab7;
+		color: #fff;
+		z-index: 2;
+	}
+	.list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > small {
+		color: inherit;
+	}
+	.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
+		color: #c7ddef;
+	}
+	.list-group-item-success {
+		background-color: #dff0d8;
+		color: #3c763d;
+	}
+	a.list-group-item-success {
+		color: #3c763d;
+	}
+	a.list-group-item-success .list-group-item-heading {
+		color: inherit;
+	}
+	a.list-group-item-success:focus, a.list-group-item-success:hover {
+		background-color: #d0e9c6;
+		color: #3c763d;
+	}
+	a.list-group-item-success.active, a.list-group-item-success.active:focus, a.list-group-item-success.active:hover {
+		background-color: #3c763d;
+		border-color: #3c763d;
+		color: #fff;
+	}
+</style>
+
+
+<style>
+.cbp-vimenu {
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #f7f7f7;
+}
+
+.cbp-vimenu li {display:inline-block;}
+.cbp-vimenu li a {
+	display: inline-block;
+	height: 5em;
+	width: 5em;
+	line-height: 5em;
+	text-align: center;
+	color: #999;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+
+.cbp-vimenu li a:hover,
+.cbp-vimenu li:first-child a{
+	background: #47a3da;
+	color: #fff;
+}
+
+/* class for current item */
+.cbp-vimenu li.cbp-vicurrent a {
+	background: #fff;
+	color: #47a3da;
+}
+.cbp-vimenu li i{font-size:24px;}
+
+/* Example for media query (depends on total height of menu) */
+@media screen and (max-height: 34.9375em) { 
+
+	/*.cbp-vimenu {
+		font-size: 70%;
+	}*/
+
+}
+.fixscroll_bottom {bottom:30px; top:auto; position:fixed;}
+</style>
+
+
+
+
+
+<style>
+.round-buttons {
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 1;
+    padding: 0px;
+    width: 100%;
+}
+.round-buttons > li {
+    background: #fcfcfc none repeat scroll 0 0!important;
+    border: 1px solid #d7d7d7;
+    
+    display: inline-block;
+/*    height: 50px; */
+    margin: 0px -1px 4px 0px;
+    position: relative;
+    text-align: center;
+/*  width: 50px;*/
+}
+.depth {
+    background-color: #7fc3dd;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+    height: 42px;
+    margin: 4px;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out 0s;
+    width: 42px;
+}
+.depth:active {
+    background: #cf6a59 none repeat scroll 0 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset;
+}
+.depth > a {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top, #ffffff 0%, #f7f7f7 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#f7f7f7)) repeat scroll 0 0;
+   
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    width: 32px;
+}
+.depth > a:active {
+    background: #fafafa none repeat scroll 0 0;
+    box-shadow: none;
+}
+.depth > a > i {
+    color: #676767;
+    float: none;
+    font-size: 21px;
+    height: 24px;
+    margin: 4px 0;
+    text-shadow: 0 1px 0 #ffffff;
+    transition: all 0.1s ease-in-out 0s;
+    width: 24px;
+}
+.depth > a:hover {
+    background: #fcfcfc none repeat scroll 0 0;
+}
+.depth > a:hover > i {
+    color: #3d829c;
+}
+.depth > a:active > i {
+    color: #cf6a59;
+}
+</style>
+
+
+	<script>
+		$(function() {
+			$(".spinner_student").hide();
+		});
+	</script>
+	
+	<link rel="stylesheet" href="/bitrix/js/jquery.validation/jquery-form-validator-2.3.26-theme-default.min.css"/>
+	<script src="/bitrix/js/jquery.validation/1.15.1-jquery.validate.min.js"></script>
+	<script type="text/javascript" src="/bitrix/templates/landing_open_door/js/jquery.mask.min.js"></script>
+	<style>
+	
+		.banner_first {bottom:240px!important;}
+		.banner_two{bottom:120px!important;}
+		.banner_3{bottom:0px!important;}
+		.checkbox input{width:auto;}
+		.bx-filter-param-text {color:#333;}
+		.bx-authform {margin:0px auto; margin-top:100px; padding:20px;}
+		.bx-title {margin-bottom:10px;}
+		.main-user-consent-request input{width: auto; float:left; margin-right: 10px; margin-top: 0px;}
+		.main-user-consent-request a{line-height: 1.2;display: inline-block;float: left;width: 90%; font-size: 12px;}
+		.main-user-consent-request a:hover {color:#23527c; text-decoration:underline;}
+
+		.form-group{
+		  margin-top: 10px;
+		}
+		label{
+		  font-size: 14px;
+		  line-height: 1em;
+		  font-weight: normal;
+		}
+		.form-control{
+		  font-size: 1.3em;
+		  color: #080808;
+		}
+		textarea.form-control {
+			height: 170px;
+		}
+		.modal-title {
+			margin-left: 12px;
+			font-size: 18px;
+		}
+
+		.submit{
+		  font-size: 1.1em;
+		  float: right;
+		  width: 150px;
+		  background-color: transparent;
+		  color: #fff;
+
+		}
+
+		.section-content{
+			font-size: 18px;
+			border-bottom: 1px #ccc solid;
+			padding-bottom: 5px;
+		}
+		.error {font-size: 11px;color: #f00;}
+		.result {font-size:12px;}
+		.result .alert {padding: 10px;margin-bottom: 0px;margin-right: 15px;}
+		#fire_event {margin-left:23px;}
+	</style>
+	<style>
+.notices-container--bottom-fixed .register-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notices-container--bottom-fixed .register-banner__text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding-right: 30px;
+}
+.hidden, .ui-helper-hidden-accessible {
+    display: none;
+}
+.notices-container--bottom-fixed {
+    width: calc(100% - 250px - 300px);
+}
+.notices-container--bottom-fixed {
+    width: calc(100% - 300px);
+}
+.notices-container--bottom-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: -700px;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.notices-container, .flash-notices {
+    z-index: 888;
+}
+.alert_info {
+    background: #2d72d9;
+}
+.alert {
+    padding: 20px 55px 20px 30px;
+}
+.alert {
+    padding: 20px 35px 20px 10px;
+    color: #fff;
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+}
+.notices-container--bottom-fixed .register-banner__button {
+    margin-top: 0;
+}
+.notices-container--bottom-fixed .register-banner__button {
+    color: #2d72d9;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 14px;
+}
+.alert_info a {
+    color: #fff;
+    text-decoration: underline;
+}
+.register-banner__button.btn_white, .register-banner__button.btn_more, .register-banner__button.btn_share {
+    font-weight: 700;
+    color: #9099a3;
+}
+.register-banner__button.btn, .register-banner__button.empty-block__button {
+    height: 30px;
+    line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    white-space: nowrap;
+}
+.register-banner__button.btn_white, .register-banner__button.btn_more, .register-banner__button.btn_share {
+    background-color: #fff;
+}
+.alert_info a {
+    color: #fff;
+    text-decoration: underline;
+}
+.alert__btn_close {
+    position: absolute;
+    padding: 2px 10px;
+    top: 0;
+    right: 0;
+    display: inline;
+    height: 100%;
+    height: 30px;
+	width: 30px;
+}
+.icon_close {
+    fill: #fff;
+}
+.icon_svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin: 0;
+    position: relative;
+    top: -1px;
+}
+.register-banner__button.btn, .register-banner__button.empty-block__button {
+    background-color: #eeeded;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: 2.3em;
+    line-height: 1;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+    padding: 9px 20px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+}
+.question {border-bottom:1px #fff dashed; float:right; margin-top: -65px; margin-right: 33px; text-decoration: none !important;}
+
+
+.alert.alert-success.alert-block.fade.in {color:#777;}
+
+</style>
+	
+
+
+<script data-skip-moving="true">
+	(function(w,d,u,b){
+		s=d.createElement('script');r=(Date.now()/1000|0);s.async=1;s.src=u+'?'+r;
+		h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn.bitrix24.ru/b3426039/crm/site_button/loader_2_hod1zo.js');
+</script>
+<script data-skip-moving="true">
+	(function(w,d,u,b){
+		s=d.createElement('script');r=(Date.now()/1000|0);s.async=1;s.src=u+'?'+r;
+		h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn.bitrix24.ru/b3426039/crm/site_button/loader_4_hkcraz.js');
+</script>
+<script>
+	(function(w,d,u){
+		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn-ru.bitrix24.ru/b3426039/crm/site_button/loader_12_sik9s7.js');
+</script>
+
+<div id="bxdynamic_TVwM3R_start" style="display:none"></div><div id="bxdynamic_TVwM3R_end" style="display:none"></div>
+
+
+
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "f69c335c59ba6d273e42491c80445c75"]); _ba.push(["host", "pgu.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+		
+						
+		<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-104106-hCSVw';</script>
+		
+	<link rel="stylesheet" type="text/css" href="/bitrix/templates/.default/plugins/flipbook/css/flipbook.style.css"><script src="/bitrix/templates/.default/plugins/flipbook/js/flipbook.min.js"></script><style>	#container_izdaniya {		min-height: 800px;    padding: 10px;position: relative;z-index:0;}</style>
+	
+	
+<style>
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+</style>
+
+<!--	<script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b3426039/crm/site_button/loader_12_sik9s7.js');
+	</script> -->
+
+<script>
+    window.addEventListener('onBitrixLiveChat', function(event){
+        var widget = event.detail.widget;
+        widget.setOption('checkSameDomain', false);
+    });
+</script>
+
+	</head>
+
+		
+		
+		
+							
+<!-- путь к главной странице в аспирантуре, для отключения правого блока с новостями -->
+					
+<!-- АСПИРАНТУРА -->
+
+<!-- путь к главной странице в аспирантуре, для отключения правого блока с новостями -->
+	
+<!-- разделы аспирантуры -->
+							<!-- раздел Photos -->
+		
+<!-- данная комбинация назначает шаблон для раздела news и всех остальных вложенных разделов -->
+	
+		
+<!--///////////////////////// ВЕСТНИК ПГЛУ ///////////////////////////////////////////////-->
+				<!--///////////////////////// Издания ПГЛУ ///////////////////////////////////////////////-->	
+	
+<!--///////////////////////// Сведения об образовательной организации ///////////////////////////////////////////////-->
+		
+<!-- ///////////////////////// вывод fancybox для ППС spyder //pglu.ru/sveden/employees/ ////////////////////////// -->
+		
+	<!-- страница описания преподавателя -->
+		
+	<!--страницы с детальным описанием преподавателя -->
+				
+		
+	<!--страницы с детальным описанием высших школ -->
+		<!--страницы с детальным описанием кафедр -->
+		<!--страницы с детальным описанием НОИКИ -->
+		<!--страницы с детальным описанием центров -->
+		<!--страницы с детальным описанием управления -->
+		<!--страницы с детальным описанием управления -->
+		<!--страницы с детальным описанием Языковые центры -->
+		<!--страницы с детальным описанием подразделений -->
+		<!--страницы с детальным описанием профсоюзов -->
+		<!--страницы с детальным описанием библиотека -->
+		
+	<!--  ENGLISH VERSION
+	
+	-->
+	
+	<!--страницы с детальным описанием высших школ -->
+		<!--страницы с детальным описанием кафедр -->
+		<!--страницы с детальным описанием НОИКИ -->
+		<!--страницы с детальным описанием центров -->
+		<!--страницы с детальным описанием управления -->
+		<!--страницы с детальным описанием управления -->
+		<!--страницы с детальным описанием Языковые центры -->
+		<!--страницы с детальным описанием подразделений -->
+		<!--страницы с детальным описанием профсоюзов -->
+		<!--страницы с детальным описанием библиотека -->
+	
+		<!-- страница описания преподавателя -->
+		
+	<!--страницы с детальным описанием преподавателя -->
+					
+	
+	<!--///////////////////////// ВЕСТНИК ПГЛУ ///////////////////////////////////////////////-->
+					
+	<!--///////////////////////// ТЕСТЫ и ОЛИМПИАДЫ pgu.ru/tests/ ///////////////////////////////////////////////-->
+		
+	
+	
+	
+	
+<!--///////////////////////// Сведения об основных профессиональных образовательных программах /information/docs/accreditation/progr/description.php ///////////////////////////////////////////////-->	
+					
+<!--///////////////////////// Об электронных образовательных ресурсах, к которым обеспечивается доступ обучающихся  /sveden/objects/edu/ ///////////////////////////////////////////////-->
+	
+<!--///////////////////////// Перевод, восстановление, отчисление  /sveden/education/movements/ ///////////////////////////////////////////////-->
+	
+<!--///////////////////////////// приемная комиссия ////////////////////-->
+		
+	
+
+
+<!--///////////////////////////// РАЗДЕЛ НОВОСТИ ВИДЕО  ////////////////////-->
+				
+<!--///////////////////////////// Вывод статистики на PORTAL EDU  ////////////////////-->
+		
+<!--///////////////////////////// Инновационные воспитательные и практикоориентированные студенческие проекты
+	//pglu.ru/innovation/stud_projects/
+  ////////////////////-->
+	
+<!-- страница "Университет сегодня" -->
+	
+<!-- раздел анонсы  -->
+	 
+	 
+	
+<!-- раздел анонсы  -->	
+				
+
+<!-- lk -->	
+
+
+
+
+
+		
+<!-- АДМИНИСТРАТИРОВАНИЕ ОПОП -->
+<body class="Index noscript">
+<div class="loading" style="display:none; font-size: 20px;color: #333;position: fixed;width: 100%;height: 100%;background-color: #eee;z-index: 99999;text-align: center;vertical-align: middle;padding-top:10%;opacity: 1;">
+	<div class="sk-cube-grid">
+  <div class="sk-cube sk-cube1"></div>
+  <div class="sk-cube sk-cube2"></div>
+  <div class="sk-cube sk-cube3"></div>
+  <div class="sk-cube sk-cube4"></div>
+  <div class="sk-cube sk-cube5"></div>
+  <div class="sk-cube sk-cube6"></div>
+  <div class="sk-cube sk-cube7"></div>
+  <div class="sk-cube sk-cube8"></div>
+  <div class="sk-cube sk-cube9"></div>
+</div>
+ Пожалуйста, подождите ...
+</div>
+
+
+	
+	<div id="panel"></div>
+
+	<div class="wrappers">
+		<div class="wrpr clearfix">
+
+		
+							<link href="/bitrix/css/main/bootstrap.min.css?1549535563121326" type="text/css"  rel="stylesheet" />
+<link rel="stylesheet" href="/lk/jslk/jquery.fancybox.min.css" />
+<script src="/lk/jslk/jquery.fancybox.min.js"></script>
+<!--validator -->
+<script src="/lk/jslk/jquery.validate.js"></script>
+<script src="/lk/jslk/jquery.maskedinput.min.js"></script>
+
+<style>
+.header_pic {width:70px; height:70px; border-radius:100%; border:1px #ccc solid; padding:3px;}
+</style>
+	<style>
+	.tabs_table, .forMainMenu, .path, .footer_partners, .footer {display:none;}
+	.welcome h1 {margin-top:100px;}
+	.wrappers {box-shadow: none;}
+	</style>
+	<script>
+		$( document ).ready(function() {
+			setTimeout(function(){
+				  $('.edupgu').click();
+			}, 2000);
+		});
+	</script>
+
+
+
+						
+			
+			<!-- main menu-->
+			<div class="clearfix">
+				<div class="mbg">
+					<div class="mob_menu_icons">
+						<a title="Версия для слабовидящих" href='/slk/card/?spec=1&f_name=&f_activity=&f_year=&f_spec=3&f_inst='><i class="fa fa-eye"></i></a>
+													<a href="/en/?lang=en" title="English version"><img src="/bitrix/templates/gos_bitrix/images/en.png" alt=""></a>
+											</div>
+					
+					<a href="#" class="open-panel"><i class="fa fa-bars"></i></a>
+				</div>
+				<nav>
+					<div id="bxdynamic_LkGdQn_start" style="display:none"></div><a href="#" class="close-panel"><i class="fa fa-times-circle-o"></i></a>
+<ul class="mainMenu">
+
+
+						<li >
+				<a href="http://edu.pgu.ru/">
+					EDU.PGU.RU				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/anketa/">
+					Анкетирование				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/ucheba/rasp/">
+					Расписание				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/stud_practice/">
+					Практика				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/elzach/">
+					Электронная зачётка				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/stati/">
+					Статьи				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/gramoti/">
+					Грамоты				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/foto_rabot/">
+					Фото работ				</a>
+			</li>
+			
+
+						<li >
+				<a href="/slk/spravka/zakaz-spravki.php">
+					Заказ справки				</a>
+			</li>
+			
+
+						<li class="selected"><a href="" class="selected"" title="Доступ запрещен">Карта активиста</a></li>
+			</ul>
+
+<div class="menu-clear-left"></div>
+
+<script>
+$( document ).ready(function() {
+    $(".open-panel").click(function(){
+		$("body").addClass("openNav");
+	});
+		
+	$(".close-panel").click(function(){ //.wrapper
+		$("body").removeClass("openNav"); //html
+	});
+});
+</script><div id="bxdynamic_LkGdQn_end" style="display:none"></div>
+					
+										</nav>
+	
+			</div>
+			
+			<table id="content" class="main_content"><tbody>
+				<tr>
+					
+					<td colspan="3">
+					
+						<!-- breadcrumb -->
+																					<div class="path">
+						<ul><li><a href="/" title="ПГУ">ПГУ</a><span></span></li><li><a href="/slk/" title="Личный кабинет студента">Личный кабинет студента</a><span></span></li><li>Карта активиста</li></ul></div>																		</td>
+				</tr>
+				
+			
+
+				
+				<tr>
+				<td class="left-column"  >
+					<aside>
+						<div class="leftCol">
+							<div class="clearfix">
+							<div class="position_fixed">	
+								<!-- LEFT MENU -->
+								
+										<div id="bxdynamic_XEVOpk_start" style="display:none"></div>
+
+<!-- Стили для виджета меню -->
+
+
+<div class="list-group">
+<div class="pos_fixed">
+
+	<!-- виджет для быстрой навигации -->
+					<ul class="round-buttons">
+				<li><div class="depth" style="background-color: #fb9d9f;"><a class="tip" title="" href="?spec=1" itemprop="Copy" data-original-title="Версия&nbsp;для слабовидящих"><i class="fa fa-eye"></i></a></div></li>
+				<li><div class="depth"><a class="tip" title="" href="/sveden/struct/" data-original-title="Подразделения"><i class="fa fa-sitemap" title=""></i></a></div></li>
+				<li><div class="depth"><a class="tip" title="" href="https://pgu.ru/vhod/" data-original-title="Вход в личный кабинет"><i class="ace-icon fa fa-users"></i></a></div></li>
+				<li><div class="depth"><a class="tip" title="" href="/information/docs/" data-original-title="Официальные&nbsp;документы"><i class="fa fa-file-text-o"></i></a></div></li>
+		<li><div class="depth"><a class="tip" title="" href="https://pgu.ru/contacts/" data-original-title="Контакты"><i class="fa fa-envelope-o"></i></a></div></li>
+					<li><div class="depth"><a class="tip" title="" href="https://pgu.ru/lk/start/" data-original-title="S.PGLU.RU:&nbsp;Электронные&nbsp;заявки&nbsp;отдела интернет-портала&nbsp;и&nbsp;развития&nbsp;ЭОС"><i class="fa fa-bolt"></i></a></div></li>
+			</ul>
+				
+		
+
+
+
+
+
+
+
+	
+
+
+
+	</ul>
+</div></div><div id="bxdynamic_XEVOpk_end" style="display:none"></div>
+
+								
+								
+
+								<!-- BANNERS BLOCK -->
+								<div class="banners_block">
+								<div id="bxdynamic_y0XwfU_start" style="display:none"></div><div id="bxdynamic_y0XwfU_end" style="display:none"></div> 
+								
+								<div id="bxdynamic_2DJmFo_start" style="display:none"></div><div id="bxdynamic_2DJmFo_end" style="display:none"></div> 
+												
+																<div id="bxdynamic_ALOAcH_start" style="display:none"></div><div id="bxdynamic_ALOAcH_end" style="display:none"></div> 
+												
+																<div id="bxdynamic_Zg1Ab0_start" style="display:none"></div><div id="bxdynamic_Zg1Ab0_end" style="display:none"></div> 
+											
+																<div id="bxdynamic_MoecjV_start" style="display:none"></div><div id="bxdynamic_MoecjV_end" style="display:none"></div> 
+								</div>
+														
+				<!-- включаемые области -->
+					<!--для страницы-->
+						  
+					<!--для раздела-->
+														
+					<!-- AUTH BLOCK -->
+													
+						</div> <!-- .position_fixed -->
+							</div><!-- .clearfix -->
+						</div> <!-- .leftCol -->
+					</aside>
+				</td>
+				  
+				  
+				<!-- текущая главная страница -->
+								
+				
+				
+					<td class="main-column">
+					
+									
+					
+
+					
+					 
+					<!-- h1 title -->					
+						<div class="welcome title_page">
+							<h1>Авторизация</h1>
+						</div>
+										<div id="bxdynamic_0weid0_start" style="display:none"></div>
+<div class="bx-authform">
+
+
+
+	<script type="text/javascript">
+function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+</script>
+
+<style>
+	.bx-authform-social {text-align:center; margin-top: 100px;}
+	.bx-authform {max-width:100%!important;}
+	.bx-authform-social ul li {width: auto; margin-right: 0px; display:block;}
+	.bx-authform-social ul {padding: 0px !important;}
+/*	.yandex, .google, .mymailru {display:none;}
+	#bx_socserv_icon_YandexOAuth, #bx_socserv_icon_GoogleOAuth, #bx_socserv_icon_MyMailRu, #bx_socserv_icon_YandexOAuth, #bx_socserv_icon_GoogleOAuth, #bx_socserv_icon_MyMailRu {display:none;}
+ */
+ hr{display:none;}
+ .welcome h1{text-align:center;}
+
+</style>
+<div class="bx-authform-social">
+	<ul>
+
+		
+						
+			
+							<li>
+					<a id="bx_socserv_icon_edu.pgu" class="edu.pgu edupgu btn btn-primary" href="javascript:void(0)" onclick="BX.util.popup('https://edu.pgu.ru/content/local/oauth/login.php?client_id=pgu.ru&amp;redirect_uri=https%3A%2F%2Fpgu.ru%2Flocal%2Fsocservhandlers%2Fedu.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fslk%252Fcard%252F%253Fcheck_key%253D2fde74bbb0f5c6bb6a59d25bbe0b99af%2526f_name%253D%2526f_activity%253D%2526f_year%253D%2526f_spec%253D3%2526f_inst%253D%26mode%3Dopener%26redirect_url%3D%252Fslk%252Fcard%252F%253Ff_name%253D%2526f_activity%253D%2526f_year%253D%2526f_spec%253D3%2526f_inst%253D', 680, 600)" title="EDU.PGU" style="text-decoration:none; font-size: 18px; line-height: 2.6;"><img src="/upload/all_for_pglu/edupgu_ico.png" style="" alt="" /> Войти через электронную информационно-образовательную среду ПГУ</a>
+					
+				</li>
+						
+		
+		
+
+		
+						
+			
+						
+		
+		
+
+		
+						
+			
+						
+		
+		
+
+		
+						
+			
+						
+		
+		
+	</ul>
+</div>
+
+	<hr class="bxe-light">
+</div>
+
+<script type="text/javascript">
+try{document.form_auth.USER_LOGIN.focus();}catch(e){}
+</script>
+
+<div id="bxdynamic_0weid0_end" style="display:none"></div>
+
+
+
+
+
+
+
+</td>
+
+				<td class="right-column">
+											<aside>
+							<div class="rightCol">
+								<div class="clearfix">
+
+										<!-- правое меню -->
+										<div id="bxdynamic_g8taYv_start" style="display:none"></div><style>
+.list-group {
+		margin-bottom: 20px;
+		padding-left: 0;
+		width: 307px;
+		margin-right:15px;
+	}
+	.list-group-item {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		display: block;
+		margin-bottom: -1px;
+		padding: 10px 15px;
+		position: relative;
+		text-decoration:none;
+	}
+	.list-group-item:first-child {
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+	.list-group-item:last-child {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		margin-bottom: 0;
+	}
+	a.list-group-item {
+		color: #555;
+	}
+	a.list-group-item .list-group-item-heading {
+		color: #333;
+	}
+	a.list-group-item:focus, a.list-group-item:hover {
+		background-color: #f5f5f5;
+		color: #555;
+		text-decoration: none;
+	}
+	.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+		background-color: #eee;
+		color: #777;
+		cursor: not-allowed;
+	}
+	.list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading {
+		color: inherit;
+	}
+	.list-group-item.disabled .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text {
+		color: #777;
+	}
+	.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+		background-color: #337ab7;
+		border-color: #337ab7;
+		color: #fff;
+		z-index: 2;
+	}
+	.list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > small {
+		color: inherit;
+	}
+	.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
+		color: #c7ddef;
+	}
+	.list-group-item-success {
+		background-color: #dff0d8;
+		color: #3c763d;
+	}
+	a.list-group-item-success {
+		color: #3c763d;
+	}
+	a.list-group-item-success .list-group-item-heading {
+		color: inherit;
+	}
+	a.list-group-item-success:focus, a.list-group-item-success:hover {
+		background-color: #d0e9c6;
+		color: #3c763d;
+	}
+	a.list-group-item-success.active, a.list-group-item-success.active:focus, a.list-group-item-success.active:hover {
+		background-color: #3c763d;
+		border-color: #3c763d;
+		color: #fff;
+	}
+
+
+</style>
+<div id="bxdynamic_g8taYv_end" style="display:none"></div>
+
+									
+
+									
+									<!-- включаемые области -->
+									<!--для страницы-->
+									  
+									
+									<!--для раздела-->
+									 									
+									<!-- BANNERS BLOCK -->
+									<div class="banners_block">
+									<div id="bxdynamic_vhh5NV_start" style="display:none"></div><div id="bxdynamic_vhh5NV_end" style="display:none"></div><div id="bxdynamic_SyEEG1_start" style="display:none"></div><div id="bxdynamic_SyEEG1_end" style="display:none"></div><div id="bxdynamic_pVYwEG_start" style="display:none"></div><div id="bxdynamic_pVYwEG_end" style="display:none"></div><div id="bxdynamic_uMP05O_start" style="display:none"></div><div id="bxdynamic_uMP05O_end" style="display:none"></div> 
+<div id="bxdynamic_hG8wzQ_start" style="display:none"></div><div id="bxdynamic_hG8wzQ_end" style="display:none"></div> </div>
+									
+									
+									
+								</div><!-- .clearfix -->
+							</div> <!-- .rightCol -->
+						</aside>
+					
+				</td>
+			</tr></tbody></table>
+
+							<div>
+					<div class="footer_partners" style="text-align:center; margin:20px 0px 36px; height:120px; overflow:hidden;">
+ <a href="//edu.gov.ru/" target="_blank"><img src="/upload/all_for_pglu/minprosv.png" height="56" style="width:186px;"></a> <a href="//minobrnauki.gov.ru/" target="_blank"><img src="/upload/all_for_pglu/MinObrNauki.svg" height="56" style="width:186px;"></a> <a href="/partners/antiterror.php" linkindex="21"><img src="/upload/all_for_pglu/terror2019.png" height="56"></a>
+	<!-- <a href="http://www.festivalnauki.ru/" target="_blank"><img height="56" src="/upload/all_for_pglu/nauka3.jpg"></a> --> <a href="/information/docs/?bitrix_include_areas=N&SECTION_ID=3169"><img src="/upload/all_for_pglu/sveden2019.png" height="56"></a> <a href="//partners.gosuslugi.ru/" target="_blank"><img src="/upload/all_for_pglu/gos_ban.jpg" height="56"></a> <br>
+ <a href="/sveden/objects/#svedenis"><img src="/upload/all_for_pglu/inform_ban.jpg" height="56" style="margin-top:5px;"></a> 
+ <a href="https://pgu.ru/bezopasnost/korruptsiya.php"><img src="/upload/all_for_pglu/corr_ban.jpg" height="56" style="margin-top:5px;"></a>
+ <a href="//miano.pglu.ru/"><img src="/upload/all_for_pglu/miano2-0.jpg" alt="" style="margin-top:5px; height:56px;"></a> 
+<a href="/information/structure/dpo/detail.php?ELEMENT_ID=32125"><img src="/upload/all_for_pglu/iipvpo_new2.png" alt="" style="height:56px; margin-top:5px;"></a> <a href="//bs.pgu.ru/"><img src="/upload/all_for_pglu/busines_school4.png" alt="" style="height:56px; margin-top:5px;"></a> <a href="/partners/" target="_blank" title="Партнёры"><img alt="part1.jpg" src="/upload/all_for_pglu/partners.png" height="56" style="margin-top:5px;"></a> <a href="/olympiada/index.php" target="_blank" title="Олимпиада старшеклассников"><img src="/upload/all_for_pglu/olimpiada.svg" height="56" style="margin-top:5px;"></a>
+</div>
+				</div>
+			<!-- footer -->
+
+		<div class="footer clearfix">
+			<div class="bottom-menu">
+				<div style="float:left; margin-left:20px;">
+					<!-- <img src="/images/logo_pglu.png" width="30px" alt="" /> -->
+					<p><strong>© 2022 ФГБОУ ВО "Пятигорский государственный университет"</strong></p>
+					<!-- p>официальный сайт</p -->    
+				</div><!-- .firstCol -->
+
+				<div style="float:right; margin-right:20px;">
+					
+					 
+									
+				</div>
+			</div>
+		</div> <!-- .footer.clearfix -->
+	</div> <!-- .wrpr -->
+</div> <!-- .wrappers -->
+
+
+	<!--  сообщение о предстоящем мероприятии сквозное плавающее окно -->
+				<script>
+$( document ).ready(function() {
+	// изменение пэйджера кнопка развернуть
+	$(".modern-page-all").addClass('arrow_next');
+	$(".modern-page-all").attr('title','Развернуть');
+    $(".modern-page-all").html('<i aria-hidden="true" class="fa fa-angle-double-down"></i>');
+	
+	// изменение пэйджера кнопка свернуть
+	$(".modern-page-pagen").addClass('arrow_next');
+	$(".modern-page-pagen").prev().hide();
+	$(".modern-page-pagen").attr('title','Свернуть');
+	$(".modern-page-pagen").html('<i aria-hidden="true" class="fa fa-angle-double-up"></i>');
+});
+
+	$( document ).ready(function() {
+		var registerBanner = $("#register-banner");
+		if (registerBanner.length && !sessionStorage["registerBannerClosed"]) {
+			setTimeout(function() {
+				registerBanner.show().animate({
+					bottom: 0
+				}, 700)
+			})
+		}
+		$(document).on("click", "[data-close-register-banner]", function() {
+			sessionStorage["registerBannerClosed"] = true;
+			var notice_block = $(this).parent();
+			notice_block.remove()
+		//$("#register-banner").hide();
+		});
+	});
+	
+	$( document ).ready(function() {
+		var registerBanner = $("#register-banner2");
+		if (registerBanner.length && !sessionStorage["registerBannerClosed"]) {
+			setTimeout(function() {
+				registerBanner.show().animate({
+					bottom: 0
+				}, 700)
+			})
+		}
+		$(document).on("click", "[data-close-register-banner]", function() {
+			sessionStorage["registerBannerClosed"] = true;
+			var notice_block = $(this).parent();
+			notice_block.remove()
+		//$("#register-banner2").hide();
+		});
+	});	
+	$( document ).ready(function() {
+		var registerBanner = $("#register-banner3");
+		if (registerBanner.length && !sessionStorage["registerBannerClosed"]) {
+			setTimeout(function() {
+				registerBanner.show().animate({
+					bottom: 0
+				}, 700)
+			})
+		}
+		$(document).on("click", "[data-close-register-banner]", function() {
+			sessionStorage["registerBannerClosed"] = true;
+			var notice_block = $(this).parent();
+			notice_block.remove()
+		//$("#register-banner2").hide();
+		});
+	});
+</script>
+				
+<style>
+#register-banner {
+	display:none!important;
+}
+</style>
+</body>
+</html>
+
+<!-- JS CSS CONTAINER -->
+
+		<!-- Google fonts -->
+<link href='/bitrix/fonts/robotoslab/Roboto+Slab 400-700-subset=latin-cyrillic.css' rel='stylesheet' type='text/css'>
+		
+		<link href="/bitrix/templates/gos_bitrix/addition_style.css?14800743182789" rel="stylesheet" />
+		
+<link href="/bitrix/css/font-awesome/4.7.0-css-font-awesome.min.css?" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	
+		
+		<!-- bootstrap 3 // -->
+		<script type="text/javascript" src="/bitrix/templates/gos_bitrix/js/bootstrap3/js/bootstrap.min.js?146606572637098"></script>
+	
+	
+		
+	
+	
+		
+	
+		
+	
+	<!--[if IE]>
+		<link href="/bitrix/templates/gos_bitrix/styles_ie.css" rel="stylesheet" />
+	<![endif]-->
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+
+	
+		
+
+
+
+<!-- вывод fancybox для ППС spyder //pglu.ru/sveden/employees/ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+<script src="/bitrix/templates/gos_bitrix/js/jquery.easing.compatibility.js?14156174964755"></script>
+<!-- script src="/js/special.js"></script -->
+<script src="/bitrix/templates/gos_bitrix/js/main.js?13923733554003"></script>
+<script src="/bitrix/templates/gos_bitrix/js/interface.js?145043236814988"></script>
+
+<!-- Video-js -->
+<link href="/bitrix/templates/gos_bitrix/video-js/video-js.css?140991468825572" rel="stylesheet">
+<script src="/bitrix/templates/gos_bitrix/video-js/video.js?140991468866671"></script>
+<script>
+	videojs.options.flash.swf = "/bitrix/templates/gos_bitrix/video-js/video-js.swf?140991468816900"
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(86934744, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/86934744" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- PRINT -->
+
+
+
+
+<link href="/bitrix/templates/gos_bitrix/print.css?1503907103319" rel="stylesheet" media="print" />
+
+<!-- PRINT -->
+
+
+
+
+<link href="/bitrix/templates/gos_bitrix/print.css?1503907103319" rel="stylesheet" media="print" /><!--03f39f1335b2cb01e1460e962756a10e-->
